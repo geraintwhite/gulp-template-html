@@ -1,0 +1,27 @@
+{
+  "name": "gulp-template-html",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:grit96/gulp-template-html"
+  },
+  "author": "Geraint White <mail@geraintwhite.co.uk>",
+  "license": "MIT#",
+  "bugs": {
+    "url": "https://github.com/grit96/gulp-template-html/issues"
+  },
+  "homepage": "https://github.com/grit96/gulp-template-html",
+  "dependencies": {
+    "through2": "~2.0.0",
+    "template-html": "0.0.1",
+    "gulp-util": "~3.0.6"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0"
+  }
+}
