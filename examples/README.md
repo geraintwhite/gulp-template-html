@@ -1,0 +1,185 @@
+## Example
+
+Running the following command will generate HTML from the `template.html` with content from `index.html`.
+
+```sh
+$ template-html index.html -t template.html
+```
+
+
+### index.html
+
+```html
+<!-- build:title -->Narrowboats and Canals. A Personal History of Narrowboat Dvbris<!-- /build:title -->
+<!-- build:header -->Narrowboats and Canals<!-- /build:header -->
+<!-- build:content -->
+<p>If you have any interest whatsoever about British Canals and narrowboats, then this site is a must for you.</p>
+<p>This site contains a brief history and a selection of photographs about our narrowboat Dvbris. Also you will find some links to other sites on the Internet.</p>
+<p>To continue click <a href="about.html">here.</a></p>
+<p align="center"><img src="images/Boat.JPG" border="2" style="max-width:100%"></p>
+<!-- /build:content -->
+<!-- build:footer -->
+<table width="100%" height="94" align="center" bgcolor="#f0f0f0">
+  <tr>
+    <td colspan="5"><div align="center" style="padding:10px"><b>
+        The UK Canals Web-Ring<br>
+        This site is owned by<br>
+        <font size="2">NB Dvbris Owners</font></b></div></td>
+  </tr>
+  <tr>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=prev&siteid=37439" target="_blank">Previous Site</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=list&siteid=37439" target="_blank">List Sites</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=random&siteid=37439" target="_blank">Random Site</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=join&siteid=37439" target="_blank">Join Ring</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=next&siteid=37439" target="_blank">Next Site</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="5"><div align="center"><img src="images/narrwbt2.gif" width="113" height="30"></div></td>
+  </tr>
+</table>
+<!-- /build:footer -->
+```
+
+
+### template.html
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><!-- build:title --></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/lightbox.min.js"></script>
+<script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1><img src="../images/dvbris.svg" alt="Dvbris" class="logo"></h1>
+      <h2><!-- build:header --></h2>
+    </header>
+    <nav><div class="nav-toggle dropdown"><a>Navigation</a></div><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li class="dropdown"><a>Photos</a><ul>
+        <li><a href="../outside_photos.html">Outside</a></li>
+        <li><a href="../inside_photos.html">Inside</a></li>
+      </ul></li>
+      <li class="dropdown"><a>On Holiday</a><ul>
+        <li><a href="../hol_warwickshire.html">Warwickshire Ring</a></li>
+        <li><a href="../hol_leicester.html">Leicester Section</a></li>
+        <li><a href="../hol_grand_union_n.html">Grand Union North</a></li>
+        <li><a href="../hol_grand_union_s.html">Grand Union South</a></li>
+      </ul></li>
+      <li><a href="../stretch.html">Stretch Job</a></li>
+      <li class="dropdown"><a>Paint Jobs</a><ul>
+        <li><a href="../painting1.html">Paint Job One</a></li>
+        <li><a href="../painting2.html">Paint Job Two</a></li>
+      </ul></li>
+      <li><a href="../links.html">Links</a></li>
+      <li><a href="../feedback.html">Feedback</a></li>
+    </ul></nav>
+    <div id="wrapper">
+      <div id="content"><!-- build:content --></div>
+      <div id="content-footer"><!-- build:footer --></div>
+    </div>
+    <footer>
+      <p>Website created by <a href="http://geraintwhite.co.uk">Geraint White</a></p>
+      <p>Copyright &copy; 2014 H White. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
+```
+
+
+### output.html
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Narrowboats and Canals. A Personal History of Narrowboat Dvbris</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/lightbox.min.js"></script>
+<script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1><img src="../images/dvbris.svg" alt="Dvbris" class="logo"></h1>
+      <h2>Narrowboats and Canals</h2>
+    </header>
+    <nav><div class="nav-toggle dropdown"><a>Navigation</a></div><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li class="dropdown"><a>Photos</a><ul>
+        <li><a href="../outside_photos.html">Outside</a></li>
+        <li><a href="../inside_photos.html">Inside</a></li>
+      </ul></li>
+      <li class="dropdown"><a>On Holiday</a><ul>
+        <li><a href="../hol_warwickshire.html">Warwickshire Ring</a></li>
+        <li><a href="../hol_leicester.html">Leicester Section</a></li>
+        <li><a href="../hol_grand_union_n.html">Grand Union North</a></li>
+        <li><a href="../hol_grand_union_s.html">Grand Union South</a></li>
+      </ul></li>
+      <li><a href="../stretch.html">Stretch Job</a></li>
+      <li class="dropdown"><a>Paint Jobs</a><ul>
+        <li><a href="../painting1.html">Paint Job One</a></li>
+        <li><a href="../painting2.html">Paint Job Two</a></li>
+      </ul></li>
+      <li><a href="../links.html">Links</a></li>
+      <li><a href="../feedback.html">Feedback</a></li>
+    </ul></nav>
+    <div id="wrapper">
+      <div id="content">
+<p>If you have any interest whatsoever about British Canals and narrowboats, then this site is a must for you.</p>
+<p>This site contains a brief history and a selection of photographs about our narrowboat Dvbris. Also you will find some links to other sites on the Internet.</p>
+<p>To continue click <a href="about.html">here.</a></p>
+<p align="center"><img src="images/Boat.JPG" border="2" style="max-width:100%"></p>
+</div>
+      <div id="content-footer">
+<table width="100%" height="94" align="center" bgcolor="#f0f0f0">
+  <tr>
+    <td colspan="5"><div align="center" style="padding:10px"><b>
+        The UK Canals Web-Ring<br>
+        This site is owned by<br>
+        <font size="2">NB Dvbris Owners</font></b></div></td>
+  </tr>
+  <tr>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=prev&siteid=37439" target="_blank">Previous Site</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=list&siteid=37439" target="_blank">List Sites</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=random&siteid=37439" target="_blank">Random Site</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=join&siteid=37439" target="_blank">Join Ring</a></div></td>
+    <td width="20%"><div align="center"><a href="http://pub41.bravenet.com/sitering/nav.php?usernum=3463023835&action=next&siteid=37439" target="_blank">Next Site</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="5"><div align="center"><img src="images/narrwbt2.gif" width="113" height="30"></div></td>
+  </tr>
+</table>
+</div>
+    </div>
+    <footer>
+      <p>Website created by <a href="http://geraintwhite.co.uk">Geraint White</a></p>
+      <p>Copyright &copy; 2014 H White. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
+```
