@@ -4,14 +4,14 @@
   "description": "Generate static HTML files from templates and content files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:grit96/gulp-template-html"
   },
   "author": "Geraint White <mail@geraintwhite.co.uk>",
-  "license": "MIT#",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/grit96/gulp-template-html/issues"
   },
@@ -22,6 +22,7 @@
     "gulp-util": "~3.0.7"
   },
   "devDependencies": {
-    "gulp": "~3.9.1"
+    "gulp": "~3.9.1",
+    "tape": "^4.5.1"
   }
 }
