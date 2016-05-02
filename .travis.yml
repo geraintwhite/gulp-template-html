@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - '0.11'
+  - '0.10'
+  - '0.12'
+  - '4'
+  - '5'
+
+deploy:
+  provider: npm
+  email: mail@geraintwhite.co.uk
+  api_key:
+    secure: CQRJeH3zs32V0Sh05Gv/I9Ab40fqrSqwVJSgaFfF/NOwdudYQ7krgQLJvlVgzGkZhz9eXJKpUQQtIhphspy507aHkLokrkDBrJHmnIzRWvj2zfcFJaqtvpG04Kx8Lnh3qHcC+lza7YPMIG5Yy5pN3oVKNoe6wMmyhijbPoSicO5dIRBclmRstmskOLnYtQhtLbWev5oygyzhC0l9azL2hm85emIFh/frj/U2/qiZ36MwBZyb2dZicelJeN3f/l74Fz24QkPJaXcZuVq+jAVz+/RaXOoQ+xwtzmaF7EqLXOrGYOa1dPJzLsqM0FdKlYUeKsK8WtNjXCtmDx6cxQTUb2YsXNGpnAsEKA2B6oTs6Guy4WUcDC1XCVUyvz98sL/k0Ic0e0jvKUt2IzngciCZMJpbwwfE7z88wivVRKIPxc1G2yhuwEVuoylv0c9kcCezHX8wTmdomu8eJq1Q1ESxpEeQqGibn0S213TtXfLfje06IDhiucwOHZY/MwPOjXO2IkRQB6l7jR7AiWKHzsyJiLPU4ERo5Jdo8WKulcbMOToc1Fnjk+saNlvSJK4BvR+j3r3lZIxPSwd9og8eNwaalNADtXnw8Cu4ABbq4Q63QfwWAC+62z+YpVfkPmiEIU3mr8Lb3hWXGZwvzxYD+croEAIPgtQSX23HK0eAxU9IxVo=
+  on:
+    tags: true
+    repo: grit96/gulp-template-html
