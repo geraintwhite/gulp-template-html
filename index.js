@@ -1,7 +1,6 @@
 var through = require('through2'),
-    gutil = require('gulp-util'),
     Templator = require('template-html'),
-    PluginError = gutil.PluginError;
+    PluginError = require('plugin-error');
 
 
 const PLUGIN_NAME = 'gulp-template-html';
