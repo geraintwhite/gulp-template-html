@@ -18,7 +18,7 @@
   "homepage": "https://github.com/grit96/gulp-template-html",
   "dependencies": {
     "plugin-error": "^1.0.1",
-    "template-html": "0.3.1",
+    "template-html": "0.3.2",
     "through2": "~3.0.0"
   },
   "devDependencies": {
