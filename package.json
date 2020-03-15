@@ -19,7 +19,7 @@
   "dependencies": {
     "plugin-error": "^1.0.1",
     "template-html": "0.3.2",
-    "through2": "~3.0.0"
+    "through2": "~3.0.1"
   },
   "devDependencies": {
     "gulp": "~4.0.0",
