@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:grit96/gulp-template-html"
+    "url": "git@github.com:geraintwhite/gulp-template-html"
   },
   "author": "Geraint White <mail@geraintwhite.co.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grit96/gulp-template-html/issues"
+    "url": "https://github.com/geraintwhite/gulp-template-html/issues"
   },
-  "homepage": "https://github.com/grit96/gulp-template-html",
+  "homepage": "https://github.com/geraintwhite/gulp-template-html",
   "dependencies": {
     "plugin-error": "^1.0.1",
     "template-html": "0.3.2",
