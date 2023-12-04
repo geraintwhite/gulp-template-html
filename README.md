@@ -1,10 +1,9 @@
 # gulp-template-html
 
 [![NPM Version](https://img.shields.io/npm/v/gulp-template-html.svg)](https://www.npmjs.com/package/gulp-template-html)
-[![Build Status](https://img.shields.io/travis/grit96/gulp-template-html.svg)](https://travis-ci.org/grit96/gulp-template-html)
-[![Dependency Status](https://img.shields.io/david/grit96/gulp-template-html.svg)](https://david-dm.org/grit96/gulp-template-html)
+[![Build Status](https://img.shields.io/travis/geraintwhite/gulp-template-html.svg)](https://travis-ci.org/geraintwhite/gulp-template-html)
 
-Gulp plugin uses [template-html](https://github.com/grit96/template-html) to generate static HTML files from templates and content files.
+Gulp plugin uses [template-html](https://github.com/geraintwhite/template-html) to generate static HTML files from templates and content files.
 
 
 ## Installation
